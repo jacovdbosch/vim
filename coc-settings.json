@@ -1,0 +1,16 @@
+{
+        "languageserver": {
+                "ccls": {
+                        "command": "ccls",
+                        "filetypes": ["c", "cpp"],
+                        "rootPatterns": [".ccls"],
+                        "initializationOptions": {
+                                "cache": {
+                                        "directory": "/tmp/ccls"
+                                }
+                        }
+                }
+        },
+        "coc.source.around.enable": false,
+        "coc.source.buffer.enable": false
+}
