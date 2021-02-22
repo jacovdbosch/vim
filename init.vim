@@ -32,7 +32,7 @@ call plug#end()
 
 let mapleader = " "
 
-source ~/.config/nvim/plug-config/coc.vim
+runtime ./plug-config/coc.vim
 
 syntax on
 syntax enable
