@@ -25,8 +25,7 @@ Plug 'calviken/vim-gdscript3'
 Plug 'dart-lang/dart-vim-plugin'
 
 " Colorschemes
-Plug 'rakr/vim-one'
-Plug 'dracula/vim'
+Plug 'rainglow/vim'
 
 call plug#end()
 
@@ -49,7 +48,7 @@ if (empty($TMUX))
     endif
 endif
 
-colorscheme dracula
+colorscheme bold-contrast
 set background=dark
 
 set cursorline
@@ -112,7 +111,7 @@ imap <A-1> <C-o>:NERDTree<CR>
 nmap <A-1> :NERDTreeToggle<CR><C-w>=
 
 " Lightline stuff
-let g:lightline = { 'colorscheme': 'dracula', 'component_function': {'filename': 'FilenameForLightline'} }
+let g:lightline = { 'component_function': {'filename': 'FilenameForLightline'} }
 
 function! FilenameForLightline()
         return expand('%')
@@ -130,4 +129,5 @@ nmap <F5> :CocCommand flutter.run --flavor beta<cr>
 
 " autocmd VimEnter * GuiPopupmenu 0
 
-let g:dart_format_on_save = 1
+" Markdown
+let g:vim_markdown_folding_disabled = 1
